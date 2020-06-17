@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularProj';
+  bgColor = "red";
+  show = false;
+
+  changeStatus(){
+    if(this.bgColor == "red"){
+      this.bgColor = "green"
+    }
+    else{
+      this.bgColor = "red";
+    }
+    this.show = ! this.show;
+  }
 }
